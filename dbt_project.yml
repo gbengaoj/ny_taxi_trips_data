@@ -34,7 +34,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   ny_taxi_trips:
     # Applies to all files under models/example/
-    
+
+vars:
+  payment_type_values: [0,1,2,3,4,5,6]
+  
 seeds:
   ny_taxi_trips:
     taxi_zone_lookup:
